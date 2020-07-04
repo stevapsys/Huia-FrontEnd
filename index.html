@@ -17,15 +17,19 @@
         <section class="formulario">
             <h1>A PLATAFORMA DE COMPRA DIRETA DO SEU ANESTÉSICO TÓPICO</h1>
 
-            <form action="https://huia.haus/" method="post">
+            <form action="https://huia.haus/" method="GET" name="form"  onsubmit="return validacao()">
                 <div>
                     <label for="CRM">CRM</label>
-                    <input type="number" name="CRM" id="CRM" placeholder="00000">
+                    <input type="number" name="CRM" id="CRM" placeholder="00000" >
+                    
+                </div>
+                <div id="campo" style="display:none;color:red;border:none;font-size:12px;">
+                    * Digite o número do seu CRM para continuar
                 </div>
                 <div>
                     <label for="UF">UF</label>
-                    <select name="UF">
-                        <option value="">Selecionar </option>
+                    <select name="UF" id="UF">
+                        <option value="" name="UF">Selecionar </option>
                         <option value="AC">Acre</option>
                         <option value="AL">Alagoas</option>
                         <option value="AP">Amapá</option>
@@ -56,8 +60,10 @@
                     </select>
     
                 </div>
-                
-                <button type="submit">CONTINUE</button>
+                <div id="campoUF" style="display:none;color:red;border:none;font-size:12px;">
+                    * Selecione um estado para continuar
+                </div>
+                <input type="submit" value="CONTINUE" class="cadastrar" onclick="validacao()">
             </form>
         </section>
         <section class="icones">
@@ -101,5 +107,8 @@
             </div>
         </section>
     </main>
+
+
+    <script src="script.js"></script>
 </body>
 </html>

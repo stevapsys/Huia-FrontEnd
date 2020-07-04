@@ -83,7 +83,7 @@ form select {
 
 }
 
-form button {
+form .cadastrar {
     margin: 1rem 3rem;
     border: none;
     padding: 0.6rem;
@@ -94,7 +94,7 @@ form button {
     cursor: pointer;
 }
 
-form button:hover {
+form .cadastrar:hover {
     background: #7e479b;
 }
 
