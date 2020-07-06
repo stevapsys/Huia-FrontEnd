@@ -101,6 +101,7 @@ form .cadastrar:hover {
 .icones span {
     text-align: center;
     display: flex;
+    justify-content: center;
     margin: 0 3rem;
     color: #7e479b;
     font-weight: 400;
